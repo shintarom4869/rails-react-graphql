@@ -1,0 +1,6 @@
+{
+  "ruby.rubocop.configFilePath": "backend/.rubocop.yml",
+  "ruby.format": false,
+  "ruby.rubocop.suppressRubocopWarnings": true,
+  "ruby.rubocop.useBundler": false
+}
