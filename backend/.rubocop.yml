@@ -1,0 +1,11 @@
+require:
+  - rubocop-rails
+
+inherit_from:
+  - .rubocop_todo.yml #[todo]空になったら消す
+  - config/rubocop/rubocop.yml
+  - config/rubocop/rails.yml
+  - config/rubocop/rspec.yml
+
+AllCops:
+  TargetRubyVersion: 3.1
