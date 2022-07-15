@@ -5,7 +5,9 @@ services:
     container_name: db
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: rails_react_graphql_development
+      MYSQL_TEST_DATABASE: rails_react_graphql_test
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
     command: --default-authentication-plugin=mysql_native_password
     volumes:
       - mysql-data:/var/lib/mysql
