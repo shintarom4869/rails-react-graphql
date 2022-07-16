@@ -7,7 +7,7 @@ module Mutations
     def resolve(id:)
       Book.find(id).delete
 
-      { id: id }
+      { id: }
     rescue => e
       GraphQL::ExecutionError.new(e.message)
     end

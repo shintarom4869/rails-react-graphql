@@ -1,6 +1,11 @@
 {
-  "ruby.rubocop.configFilePath": "backend/.rubocop.yml",
-  "ruby.format": false,
-  "ruby.rubocop.suppressRubocopWarnings": true,
-  "ruby.rubocop.useBundler": false
+  "ruby.format": "rubocop",
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true,
+      "except": ["Metrics"] // because it is annoying that it puts wavy lines to all lines in those methods
+    }
+  }
 }

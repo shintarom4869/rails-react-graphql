@@ -7,7 +7,7 @@ module Mutations
     def resolve(params:)
       book = Book.create!(params.to_h)
 
-      { book: book }
+      { book: }
     rescue => e
       GraphQL::ExecutionError.new(e.message)
     end
